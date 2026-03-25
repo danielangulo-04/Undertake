@@ -1,10 +1,10 @@
-package com.unimayor.Undertake.model;
+package com.unimayor.Undertake.MentoresDTO;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collection = "Eventos")
-public class EventosDTO {
+@Document(collection = "Mentores")
+public class MentoresDTO {
 
     @Id
     private String id;
@@ -13,10 +13,10 @@ public class EventosDTO {
     private String lugar;
     private String descripcion;
 
-    public EventosDTO() {
+    public MentoresDTO() {
     }
 
-    public EventosDTO(String id, String nombreEvento, String fecha, String lugar, String descripcion) {
+    public MentoresDTO(String id, String nombreEvento, String fecha, String lugar, String descripcion) {
         this.id = id;
         this.nombreEvento = nombreEvento;
         this.fecha = fecha;
