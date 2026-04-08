@@ -1,4 +1,4 @@
-package com.unimayor.Undertake.MentoresDTO;
+package com.unimayor.Undertake.model;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -8,20 +8,20 @@ public class MentoresDTO {
 
     @Id
     private String id;
-    private String nombreEvento;
-    private String fecha;
-    private String lugar;
-    private String descripcion;
+    private String nombre;
+    private String especialidad;
+    private String experiencia;
+    private String correo;
 
     public MentoresDTO() {
     }
 
-    public MentoresDTO(String id, String nombreEvento, String fecha, String lugar, String descripcion) {
+    public MentoresDTO(String id, String nombre, String especialidad, String experiencia, String correo) {
         this.id = id;
-        this.nombreEvento = nombreEvento;
-        this.fecha = fecha;
-        this.lugar = lugar;
-        this.descripcion = descripcion;
+        this.nombre = nombre;
+        this.especialidad = especialidad;
+        this.experiencia = experiencia;
+        this.correo = correo;
     }
 
     public String getId() {
@@ -32,38 +32,39 @@ public class MentoresDTO {
         this.id = id;
     }
 
-    public String getNombreEvento() {
-        return nombreEvento;
+    public String getNombre() {
+        return nombre;
     }
 
-    public void setNombreEvento(String nombreEvento) {
-        this.nombreEvento = nombreEvento;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
     }
 
-    public String getFecha() {
-        return fecha;
+    public String getEspecialidad() {
+        return especialidad;
     }
 
-    public void setFecha(String fecha) {
-        this.fecha = fecha;
+    public void setEspecialidad(String especialidad) {
+        this.especialidad = especialidad;
     }
 
-    public String getLugar() {
-        return lugar;
+    public String getExperiencia() {
+        return experiencia;
     }
 
-    public void setLugar(String lugar) {
-        this.lugar = lugar;
+    public void setExperiencia(String experiencia) {
+        this.experiencia = experiencia;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getCorreo() {
+        return correo;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setCorreo(String correo) {
+        this.correo = correo;
     }
 }
+
 
 
 
